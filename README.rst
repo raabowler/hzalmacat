@@ -2,14 +2,13 @@
  
 ============
 
-** To be updated in the next month **
-
 Overview
 -----------
 The catalogue compiled and presented here contains the published ALMA and NOEMA observations of galaxies at z > 6.5 as presented in the review paper entitled "An ALMA view of high-redshift galaxy formation" by Renske Smit and Rebecca Bowler 2026 published in the Annual Review of Astronomy and Astrophysics.
 We enteavor to keep this catalogue up to date in future.
 
 Here we include
+
  - the original catalogue
  - any updated catalogues
  - a description of the columns
@@ -28,6 +27,7 @@ Listed in the catalogue directory.  The columns are as follows:
 * Column z_spec: Spectroscopic redshift from FIR lines if available
 * Column z_phot: Photometry redshift (errors available)
 * Column Category: The final category of the source, either
+
     * LBG
     * LAE,  if the rest-EW of Lyman-alpha is > 25A
     * Quasar
@@ -42,21 +42,21 @@ Listed in the catalogue directory.  The columns are as follows:
 * Column flux90, error90, freq90: from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 7 at z ~ 7)
 * Column Luv, LuvErr: absolute UV luminosity from the literature (matches Muv).  Typically at 1500 or 1600A rest-frame.
 
+
+Errors or updates
+~~~~~~~~~~~
+If you find any errors in the catalogue or would like to supply updated values please contact rebecca.bowler manchester.ac.uk.
+
+
 The python notebooks
 ~~~~~~~~~~~
-
+To be updated summer 2026
 
 Referencing
 -----------
-If you use the catalogue or notebook in a publication or presentation, please 1) cite the original review artile and 2) add a link to the GitHub repository: https://github.com/raabowler/hzalmacat
+If you use the catalogue or notebook in a publication or presentation, please 1) cite the original review artile (https://www.annualreviews.org/content/journals/10.1146/annurev-astro-052722-104242) and 2) add a link to the GitHub repository: https://github.com/raabowler/hzalmacat
 
 Contributors
 ~~~~~~~~~~
 * Rebecca Bowler & Renske Smit
 
-Bibcode
-~~~~~~~~~
-TBD
-
-
-.. _this Google spreadsheet: https://docs.google.com/spreadsheets/d/1GBEhRR3zSSVupEGh4PbrzMAKzs3w1x2MC6JLtsIIgbk/edit?usp=sharing
