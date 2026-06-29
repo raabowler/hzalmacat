@@ -27,21 +27,20 @@ Listed in the catalogue directory.  The columns are as follows:
 * Column redshift: Spectroscopic redshift if available, if not the photometric redshift
 * Column z_spec: Spectroscopic redshift from FIR lines if available
 * Column z_phot: Photometry redshift (errors available)
-* Column Category: The final category of the source, either:
+* Column Category: The final category of the source, either
     * LBG
     * LAE,  if the rest-EW of Lyman-alpha is > 25A
     * Quasar
     * ALMA, a FIR selected source
-
 * Column Selection: as above, except in the case of a narrow band LAE source, that has too low an EW of Lyman-alpha
 * Column LCII/LCII_e: luminosity and error of CII, from the literature
-* Column flux160, error160, freq160: from the literature in the band closest to rest-frame 160 microns (e.g. around CCI in Band 6 at z ~ 7)
+* Column flux160, error160, freq160: from the literature in the band closest to rest-frame 160 microns (e.g. around CII in Band 6 at z ~ 7)
 * Column LIR, LIR_lerr, LIR_uerr: Luminosity from 8-1000 microns, from our modified Black Body with an evolving dust temperature that is 41K at z ~ 6 (see review), and beta_d = 1.8.
 * Column Muv, Muv_e: absolute UV magnitude from the literature.  Typically at 1500 or 1600A rest-frame.
 * Column lMstar, lMstar_ue, lMstar_le: log10 (stellar mass/solar mass) from the literature.
 * Column beta, beta_le, beta_ue: the rest-frame UV slope from the literature
-
 * Column flux90, error90, freq90: from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 7 at z ~ 7)
+* Column Luv, LuvErr: absolute UV luminosity from the literature (matches Muv).  Typically at 1500 or 1600A rest-frame.
 
 The python notebooks
 ~~~~~~~~~~~
