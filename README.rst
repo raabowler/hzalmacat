@@ -28,10 +28,10 @@ Listed in the catalogue directory.  The columns are as follows:
 * Column z_spec: Spectroscopic redshift from FIR lines if available
 * Column z_phot: Photometry redshift (errors available)
 * Column Category: The final category of the source, either:
-    LBG
-    LAE - if the rest-EW of Lyman-alpha is > 25A
-    Quasar
-    ALMA - a FIR selected source
+    * LBG
+    * LAE,  if the rest-EW of Lyman-alpha is > 25A
+    * Quasar
+    * ALMA, a FIR selected source
 
 * Column Selection: as above, except in the case of a narrow band LAE source, that has too low an EW of Lyman-alpha
 * Column LCII/LCII_e: luminosity and error of CII, from the literature
