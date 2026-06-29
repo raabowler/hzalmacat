@@ -9,11 +9,11 @@ Overview
 The catalogue compiled and presented here contains the published ALMA and NOEMA observations of galaxies at z > 6.5 as presented in the review paper entitled "An ALMA view of high-redshift galaxy formation" by Renske Smit and Rebecca Bowler 2026 published in the Annual Review of Astronomy and Astrophysics.
 We enteavor to keep this catalogue up to date in future.
 
-Here we include:
-- the original catalogue
-- any updated catalogues
-- a description of the columns
-- basic codes for reading in and displaying the results
+Here we include
+ - the original catalogue
+ - any updated catalogues
+ - a description of the columns
+ - basic codes for reading in and displaying the results
 
 
 The catalogue
