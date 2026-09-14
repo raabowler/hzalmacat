@@ -48,7 +48,7 @@ The columns are as follows:
 * Column Luv, LuvErr: absolute UV luminosity from the literature. Typically at 1500 or 1600A rest-frame in solar luminosity.  Directly quoted from the literature where available or else converted from Muv.
 * Column LIR, LIR_le, LIR_ue: Luminosity from 8-1000 microns, from our modified Black Body with an evolving dust temperature that is 41K at z ~ 6 (see review), and beta_d = 1.8.
 * Column IRX, IRX_le, IRX_ue: infrared excess derived from the Lir and LUV computed in the review.
-* Column SFR_IR, SFR_IR_le, SFR_IR_ue: SFR derived from the IR luminosity abvoe, converted to a SFR using the Kennicutt & Evans calibration 2012, corrected by a factor of 0.63 for a Chabrier IMF.
+* Column SFR_IR, SFR_IR_e: SFR derived from the IR luminosity abvoe, converted to a SFR using the Kennicutt & Evans calibration 2012, corrected by a factor of 0.63 for a Chabrier IMF.
 * Column fobs, fobs_le, fobs_ue: obscured fraction computed from the SFR_UV and SFR_IR.  
 * Column Td, Td_le, Td_ue: dust temperature from the literature, when quoted as the Black Body temperature (not peak).
 * Column Tpeak, Tpeak_le, Tpeak_ue: peak dust temperature from the literature.
