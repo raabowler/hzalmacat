@@ -39,15 +39,16 @@ The columns are as follows:
  * Quasar
  * ALMA, a FIR selected source (e.g. ALMA or SPT)
 * Column Selection: as above, except LAEs are only sources that were originally selected with the narrowband technique (not LBGs that have strong line emission)
-* Column EWLyman: the rest-frame equivalent width of Lyman-alpha in Angstrom, nan if unavailable. 
+* Column EWLyman: the rest-frame equivalent width of Lyman-alpha in Angstrom, nan if unavailable. If there is an upper limit we quote the 1 sigma limit as a negative value.
 * Column LCII/LCII_e: luminosity and error of the [CII]158 line, from the literature. For -99 in the error column, the LCII column gives 1 sigma upper limits. Nan if no data is available. * Column CII_FWHM, CII_FWHM_e: the full width at half maximum (and error) of the [CII]158 linein km/s, nan if not available  
+* Column CII_FWHM/CII_FWHM_e: the full width at half maximum (and error) of the [CII]158 line in km/s, nan if not available
 * Column LOIII/LOII_e: luminosity and error of the [OIII]88 line, from the literature. For -99 in the error column, the LOIII column gives 1 sigma upper limits. Nan if no data is available. 
-* Column OIII_FWHM/OIIII_FWHM_e: the full width at half maximum (and error) of the [OIII]88 line in km/s, nan if not available  
-* Column EWOIIIHb/EWOIIIHb_e: the rest-frame equivalent width of the Hb Balmer line combined with the [OIII]4969,5007 doublet.
+* Column OIII_FWHM/OIII_FWHM_e: the full width at half maximum (and error) of the [OIII]88 line in km/s, nan if not available  
+* Column EWOIIIHb/EWOIIIHb_e: the rest-frame equivalent width of the Hb Balmer line combined with the [OIII]4969,5007 doublet in Angstrom. Nan is no data is available.
 * Column SFR_UV, SFR_UV_ue, SFR_UV_le: UV luminosity, uncorrected for dust, converted to a SFR using the Madau & Dickenson conversion corrected by a factor of 0.63 for a Chabrier IMF. 
-* Column Luv, LuvErr: absolute UV luminosity from the literature. Typically at 1500 or 1600A rest-frame in solar luminosity.  Directly quoted from the literature where available or else converted from Muv.
-* Column LIR, LIR_le, LIR_ue: Luminosity from 8-1000 microns, from our modified Black Body with an evolving dust temperature that is 41K at z ~ 6 (see review), and beta_d = 1.8.
-* Column IRX, IRX_le, IRX_ue: infrared excess derived from the Lir and LUV computed in the review.
+* Column Luv, Luv_e: absolute UV luminosity from the literature. Typically at 1500 or 1600A rest-frame in solar luminosity.  Directly quoted from the literature where available or else converted from Muv.
+* Column Lir, Lir_e: Luminosity from 8-1000 microns, from our modified Black Body with an evolving dust temperature that is 41K at z ~ 6 (see review), and beta_d = 1.8.
+* Column IRX, IRX_le, IRX_ue: log10(infrared excess) derived from the Lir and Luv computed in the review.
 * Column SFR_IR, SFR_IR_e: SFR derived from the IR luminosity abvoe, converted to a SFR using the Kennicutt & Evans calibration 2012, corrected by a factor of 0.63 for a Chabrier IMF.
 * Column fobs, fobs_le, fobs_ue: obscured fraction computed from the SFR_UV and SFR_IR.  
 * Column Td, Td_le, Td_ue: dust temperature from the literature, when quoted as the Black Body temperature (not peak).
@@ -58,6 +59,10 @@ The columns are as follows:
 * Column freq160: observed frequency in GHz from the literature if reported, else using 1898.734/(1+redshift).
 * Column flux90, error90: flux and error from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 8 at z ~ 7). For -99 in the error column, the flux90 column gives 1 sigma upper limits. Nan if unavailable. 
 * Column freq90: observed frequency in GHz from the literature if reported, else using xxxx/(1+redshift).
+
+Redshifts from REBELS
+~~~~~~~~~~~
+The redshifts used for the REBELS sample were obtained from the upcoming publication Schouws, Bouwens et al. in prep.
 
 Errors or updates
 ~~~~~~~~~~~
