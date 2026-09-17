@@ -17,7 +17,7 @@ Here we include
 
 The catalogue
 ~~~~~~~~~~~
-Note that a -99 in the _ue column signifies an upper limit.  In this case the value is given as the 3 sigma limit.  e.g. if fobs_ue = -99, then the value listed as fobs for that source is an upper limit of 3 sigma and should be plotted as a limit.
+Note that a -99 in the error column (_ue or _e) signifies an upper limit.  In this case the value is given as the 3 sigma limit.  e.g. if fobs_ue = -99, then the value listed as fobs for that source is an upper limit of 3 sigma and should be plotted as a limit.
 
 The columns are as follows:
 
@@ -45,14 +45,14 @@ The columns are as follows:
 * Column LOIII/LOII_e: luminosity and error of the [OIII]88 line, from the literature. For -99 in the error column, the LOIII column gives 1 sigma upper limits. Nan if no data is available. 
 * Column OIII_FWHM/OIII_FWHM_e: the full width at half maximum (and error) of the [OIII]88 line in km/s, nan if not available  
 * Column EWOIIIHb/EWOIIIHb_e: the rest-frame equivalent width of the Hb Balmer line combined with the [OIII]4969,5007 doublet in Angstrom. Nan is no data is available.
-* Column SFR_UV, SFR_UV_ue, SFR_UV_le: UV luminosity, uncorrected for dust, converted to a SFR using the Madau & Dickenson conversion corrected by a factor of 0.63 for a Chabrier IMF. 
+* Column SFR_UV, SFR_UV_ue, SFR_UV_le: UV luminosity, uncorrected for dust, converted to a SFR using the Madau & Dickenson conversion corrected by a factor of 0.63 for a Chabrier IMF. Units of solar masses per year.
 * Column Luv, Luv_e: absolute UV luminosity from the literature. Typically at 1500 or 1600A rest-frame in solar luminosity.  Directly quoted from the literature where available or else converted from Muv.
-* Column Lir, Lir_e: Luminosity from 8-1000 microns, from our modified Black Body with an evolving dust temperature that is 41K at z ~ 6 (see review), and beta_d = 1.8.
+* Column Lir, Lir_e: Luminosity from 8-1000 microns in solar luminosities, from our modified Black Body with an evolving dust temperature that is 41K at z ~ 6 (see review), and beta_d = 1.8.
 * Column IRX, IRX_le, IRX_ue: log10(infrared excess) derived from the Lir and Luv computed in the review.
-* Column SFR_IR, SFR_IR_e: SFR derived from the IR luminosity abvoe, converted to a SFR using the Kennicutt & Evans calibration 2012, corrected by a factor of 0.63 for a Chabrier IMF.
+* Column SFR_IR, SFR_IR_e: SFR derived from the IR luminosity above, converted to a SFR using the Kennicutt & Evans calibration 2012, corrected by a factor of 0.63 for a Chabrier IMF.  Units of solar masses per year.
 * Column fobs, fobs_le, fobs_ue: obscured fraction computed from the SFR_UV and SFR_IR.  
-* Column Td, Td_le, Td_ue: dust temperature from the literature, when quoted as the Black Body temperature (not peak).
-* Column Tpeak, Tpeak_le, Tpeak_ue: peak dust temperature from the literature.
+* Column Td, Td_le, Td_ue: dust temperature from the literature in Kelvin, when quoted as the Black Body temperature (not peak).
+* Column Tpeak, Tpeak_le, Tpeak_ue: peak dust temperature in Kelvin from the literature.
 * Column dustmass, dustmass_le, dustmass_ue: estimated as in the review from the best-fitting modified Black body.
 * Column flux90, error90, freq90: from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 7 at z ~ 7)
 * Column flux160, error160: flux and error from the literature in the band closest to rest-frame 160 microns (e.g. around CII in Band 6 at z ~ 7). For -99 in the error column, the flux160 column gives 1 sigma upper limits. Nan if unavailable. 
@@ -60,9 +60,9 @@ The columns are as follows:
 * Column flux90, error90: flux and error from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 8 at z ~ 7). For -99 in the error column, the flux90 column gives 1 sigma upper limits. Nan if unavailable. 
 * Column freq90: observed frequency in GHz from the literature if reported, else using xxxx/(1+redshift).
 
-Redshifts from REBELS
+CII luminosities and FWHM from REBELS
 ~~~~~~~~~~~
-The redshifts used for the REBELS sample were obtained from the upcoming publication Schouws, Bouwens et al. in prep.
+The CII luminosity values and FWHM from the REBELS sample were obtained from the upcoming publication Schouws, Bouwens et al. in prep.
 
 Errors or updates
 ~~~~~~~~~~~
