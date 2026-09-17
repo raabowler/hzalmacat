@@ -56,9 +56,9 @@ The columns are as follows:
 * Column dustmass, dustmass_le, dustmass_ue: estimated as in the review from the best-fitting modified Black body.
 * Column flux90, error90, freq90: from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 7 at z ~ 7)
 * Column flux160, error160: flux and error from the literature in the band closest to rest-frame 160 microns (e.g. around CII in Band 6 at z ~ 7). For -99 in the error column, the flux160 column gives 1 sigma upper limits. Nan if unavailable. 
-* Column freq160: observed frequency in GHz from the literature if reported, else using 1898.734/(1+redshift).
+* Column freq160: observed frequency in GHz from the literature if reported, else using 1900.54/(1+redshift).
 * Column flux90, error90: flux and error from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 8 at z ~ 7). For -99 in the error column, the flux90 column gives 1 sigma upper limits. Nan if unavailable. 
-* Column freq90: observed frequency in GHz from the literature if reported, else using xxxx/(1+redshift).
+* Column freq90: observed frequency in GHz from the literature if reported, else using 3393.01/(1+redshift).
 
 CII luminosities and FWHM from REBELS
 ~~~~~~~~~~~
