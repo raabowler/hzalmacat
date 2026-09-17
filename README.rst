@@ -5,7 +5,7 @@
 Overview
 -----------
 The catalogue compiled and presented here contains the published ALMA and NOEMA observations of galaxies at z > 6.5 as presented in the review article entitled "An ALMA view of high-redshift galaxy formation" by Renske Smit and Rebecca Bowler published in the Annual Review of Astronomy and Astrophysics in 2026.
-We enteavor to keep this catalogue up to date in future.
+We endeavour to keep this catalogue up to date in future.
 
 Here we include
 
@@ -55,9 +55,9 @@ The columns are as follows:
 * Column Tpeak, Tpeak_le, Tpeak_ue: peak dust temperature in Kelvin from the literature.
 * Column dustmass, dustmass_le, dustmass_ue: estimated as in the review from the best-fitting modified Black body.
 * Column flux90, error90, freq90: from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 7 at z ~ 7)
-* Column flux160, error160: flux and error from the literature in the band closest to rest-frame 160 microns (e.g. around CII in Band 6 at z ~ 7). For -99 in the error column, the flux160 column gives 1 sigma upper limits. Nan if unavailable. 
+* Column flux160, error160: flux and error from the literature, in microJy, in the band closest to rest-frame 160 microns (e.g. around CII in Band 6 at z ~ 7). For -99 in the error column, the flux160 column gives 1 sigma upper limits. Nan if unavailable. 
 * Column freq160: observed frequency in GHz from the literature if reported, else using 1900.54/(1+redshift).
-* Column flux90, error90: flux and error from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 8 at z ~ 7). For -99 in the error column, the flux90 column gives 1 sigma upper limits. Nan if unavailable. 
+* Column flux90, error90: flux and error from the literature, in microJy, in the band closest to rest-frame 90 microns (e.g. around OIII in Band 8 at z ~ 7). For -99 in the error column, the flux90 column gives 1 sigma upper limits. Nan if unavailable. 
 * Column freq90: observed frequency in GHz from the literature if reported, else using 3393.01/(1+redshift).
 
 CII luminosities and FWHM from REBELS
