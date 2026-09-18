@@ -40,9 +40,9 @@ The columns are as follows:
  * ALMA, a FIR selected source (e.g. ALMA or SPT)
 * Column Selection: as above, except LAEs are only sources that were originally selected with the narrowband technique (not LBGs that have strong line emission)
 * Column EWLyman: the rest-frame equivalent width of Lyman-alpha in Angstrom, nan if unavailable. If there is an upper limit we quote the 1 sigma limit as a negative value.
-* Column LCII/LCII_e: luminosity and error of the [CII]158 line, from the literature. For -99 in the error column, the LCII column gives 1 sigma upper limits. Nan if no data is available. * Column CII_FWHM, CII_FWHM_e: the full width at half maximum (and error) of the [CII]158 linein km/s, nan if not available  
-* Column CII_FWHM/CII_FWHM_e: the full width at half maximum (and error) of the [CII]158 line in km/s, nan if not available
-* Column LOIII/LOII_e: luminosity and error of the [OIII]88 line, from the literature. For -99 in the error column, the LOIII column gives 1 sigma upper limits. Nan if no data is available. 
+* Column LCII/LCII_e: luminosity and error of the [CII]158 line, from the literature, in solar luminosities. For -99 in the error column, the LCII column gives 1 sigma upper limits. Nan if no data is available. 
+* Column CII_FWHM, CII_FWHM_e: the full width at half maximum (and error) of the [CII]158 linein km/s, nan if not available  
+* Column LOIII/LOII_e: luminosity and error of the [OIII]88 line, from the literature, in solar luminosities. For -99 in the error column, the LOIII column gives 1 sigma upper limits. Nan if no data is available. 
 * Column OIII_FWHM/OIII_FWHM_e: the full width at half maximum (and error) of the [OIII]88 line in km/s, nan if not available  
 * Column EWOIIIHb/EWOIIIHb_e: the rest-frame equivalent width of the Hb Balmer line combined with the [OIII]4969,5007 doublet in Angstrom. Nan is no data is available.
 * Column SFR_UV, SFR_UV_ue, SFR_UV_le: UV luminosity, uncorrected for dust, converted to a SFR using the Madau & Dickenson conversion corrected by a factor of 0.63 for a Chabrier IMF. Units of solar masses per year.
@@ -53,8 +53,7 @@ The columns are as follows:
 * Column fobs, fobs_le, fobs_ue: obscured fraction computed from the SFR_UV and SFR_IR.  
 * Column Td, Td_le, Td_ue: dust temperature from the literature in Kelvin, when quoted as the Black Body temperature (not peak).
 * Column Tpeak, Tpeak_le, Tpeak_ue: peak dust temperature in Kelvin from the literature.
-* Column dustmass, dustmass_le, dustmass_ue: estimated as in the review from the best-fitting modified Black body.
-* Column flux90, error90, freq90: from the literature in the band closest to rest-frame 90 microns (e.g. around OIII in Band 7 at z ~ 7)
+* Column dustmass, dustmass_le, dustmass_ue: estimated as in the review from the best-fitting modified Black body.  In solar masses.
 * Column flux160, error160: flux and error from the literature, in microJy, in the band closest to rest-frame 160 microns (e.g. around CII in Band 6 at z ~ 7). For -99 in the error column, the flux160 column gives 1 sigma upper limits. Nan if unavailable. 
 * Column freq160: observed frequency in GHz from the literature if reported, else using 1900.54/(1+redshift).
 * Column flux90, error90: flux and error from the literature, in microJy, in the band closest to rest-frame 90 microns (e.g. around OIII in Band 8 at z ~ 7). For -99 in the error column, the flux90 column gives 1 sigma upper limits. Nan if unavailable. 
